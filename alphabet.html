@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="JavaScript based Alphabet Trainer">
+  <meta name="author" content="Stefan Obermeier">
+
+  <title>Alphabet Trainer</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link href="style_alphabet.css" rel="stylesheet">
+
+  <script src="script_alphabet.js"></script>
+
+</head>
+
+<body>
+
+
+
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <p class="lead">Which letter comes first in the alphabet?</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-center">
+        <p>Score:</p>
+        <p id="score">0</p>
+      </div>
+      <div class="col text-center">
+        <p>Timer:</p>
+        <p id="timer">0</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-4 text-center">
+        <h1 id="letter1" class="display-1" onclick="letter1_click()"></h1>
+      </div>
+      <div class="col-4 text-center">
+        <h1 id="letter2" class="display-1" onclick="letter2_click()"></h1>
+      </div>
+      <div class="col-2"></div>
+    </div>
+    <div class="row">
+      <div class="col text-center">
+        <p id="errorlist"><br></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.slim.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
