@@ -23,18 +23,21 @@ function update_score(correct) {
 
     if (correct) {
         score += 1;
+        notification_color = "darkseagreen"
 
     } else {
         score = 0;
-
-        document.body.style.backgroundColor = "red";
-
-        setTimeout(() => { document.body.style.backgroundColor = "darkgray";
- }, 500);
+        notification_color = "tomato"
 
         error_msg();
 
     }
+
+    document.body.style.backgroundColor = notification_color;
+
+    setTimeout(() => {
+        document.body.style.backgroundColor = "darkgray";
+    }, 500);
 
     document.getElementById("score").innerHTML = score;
 
